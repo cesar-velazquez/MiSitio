@@ -79,7 +79,9 @@
                     <h3 class="name">Un poco sobre mí...</h3>
                     <p class="parrafo__me">                        
                         Soy un joven apasionado por aprender y sumergirme en el mundo de las tecnologías del desarrollo de software.
-                        Actualmente me encuentro capacitándome en un bootcamp y en diferentes cursos con el fin de especializarme y obtener mayores oportunidades de conseguir mi primer trabajo como desarrollador.
+                        <br/><br/>
+                        Actualmente me encuentro capacitándome en un bootcamp y en diferentes cursos de tecnología con el fin de especializarme y obtener mayores oportunidades de conseguir mi primer trabajo como desarrollador. 
+                        <br/><br/>
                         Fuera de mi vida profesional dedico mi tiempo de ocio a ejercitarme, ver películas en su mayoría
                         de terror o acción, además disfruto de ver anime, hacer ejercicio y en ocasiones jugar futbol.                        
                     </p>
@@ -242,7 +244,7 @@
             <div id="cont" class="contact">
                 <h4 class="contact">Contactame</h4>
 
-                <form class="form" id="formu" action="https://formsubmit.co/43535478d46dabf6df3d5bebe7b60133" method="POST">
+                <form class="form" id="formulario" id="formu" onsubmit="return ValidateForm()" action="https://formsubmit.co/43535478d46dabf6df3d5bebe7b60133" method="POST">
                     <label class="label__form label__form__show" id="lab__Name" for="name">Nombre:</label>
                     <input class="inf__input inf__show" id="label__Name" type="text" placeholder="Nombre" name="name">
 
@@ -253,10 +255,11 @@
                     <input class="inf__input" id="input__asunto" type="text" name="asunto" placeholder="Asunto">
 
                     <label class="label__form label__form__show" for="messagge">Mensaje</label>
-                    <textarea class="inf__area" name="comments" id="" cols="50" rows="10"
+                    <textarea class="inf__area" name="comments" id="meesage" cols="50" rows="10"
                         placeholder="Mensaje"></textarea>
 
-                    <input type="submit" class="btn__form" href="#" value="Enviar">
+                        <!-- id="btnsend" onclick="return ValidateForm()"-->
+                    <input type="submit" id="btnsend" class="btn__form" value="Enviar">
                     <input type="hidden" name="_next" value="https://misitiocesarvelazquez.netlify.app/">
                     <input type="hidden" name="_captcha" value="false">
                 </form>
@@ -284,6 +287,12 @@
                                 Velazquez</b></a> </p>
                 </div>
             </footer>
+            <div class="content__loader">                
+                <div class="loader">
+                    <div class="custom-loader"></div>
+                    <!-- <img class="img__loader" src="src/image/loader/load2.jpg" alt="Loader"> -->
+                </div>
+            </div>            
         </div>
     </div>
 </body>
